@@ -1,0 +1,43 @@
+/*Com base na tabela abaixo, escreva um programa que leia o código de um item e a quantidade deste item. A
+seguir, calcule e mostre o valor da conta a pagar.*/
+
+package curso_programacao;
+
+import java.util.Scanner;
+
+public class Ex5_Estrutura_condicional {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		int cod;
+		int qtdade;
+		
+		cod = entrada.nextInt();
+		qtdade = entrada.nextInt();
+		
+		double total;
+		
+		if (cod == 1) {
+			total = qtdade * 4.0;
+		}
+		else if (cod == 2) {
+			total = qtdade * 4.5;
+		}
+		else if (cod == 3) {
+			total = qtdade * 5.0;
+		}
+		else if (cod == 4) {
+			total = qtdade * 2.0;
+		}
+		else {
+			total = qtdade * 1.5;
+		}
+
+		System.out.printf("Total: R$ %.2f%n", total);
+		
+		entrada.close();
+		
+		
+	}
+
+}
